@@ -1,48 +1,63 @@
-# Astro Starter Kit: Basics
+# Portafolio Minimalista con Astro
 
+Siguiendo el tutorial de Midudev en [Youtube](https://youtu.be/Zwh92LTB-Bk?si=YyTW_z6K4eiSUP3l)
+
+
+## Configuración de tsconfig.json para importar módulos con alias (@)
+```json
+"compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+```
+
+Schema del JSON de CV, standar en:
+https://jsonresume.org/schema
+
+
+
+
+
+
+
+
+
+
+
+
+
+## EPERM: operation not permitted, rmdir
+Con esto se solucionan el error
 ```sh
-npm create astro@latest -- --template basics
+$ npm run build
+
+> generador-de-sitios-estaticos---fazt@0.0.1 build
+> astro build
+
+13:22:14 [types] Generated 1ms
+13:22:14 [vite] Re-optimizing dependencies because lockfile has changed
+EPERM: operation not permitted, rmdir 'D:\Progra\Platzi\Cursos Webs\Astro-Desarrollo-web\node_modules\.vite\deps'
+  Stack trace:
+
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+ejecutando los 5 pasos de aquí, se soluciona (ojo comandos para consola windows, no funcionan en bash porque emula comandos Linux)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1) clean npm cache
+npm cache clean --force
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+2) (Windows) delete node_modules and package-lock.json
+rd /s /q "node_modules"
+del package-lock.json
+del -f yarn.lock
 
-## 🚀 Project Structure
+3) update your npm version
+npm install -g npm@latest --force
 
-Inside of your Astro project, you'll see the following folders and files:
+4) clean npm cache
+npm cache clean --force
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+5) install packages
+npm install
