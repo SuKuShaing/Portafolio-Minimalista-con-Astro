@@ -1,8 +1,8 @@
 {
 	"basics": {
-		"name": "John Doe",
+		"name": "Sebastián Sanhueza Tapia",
 		"label": "Programmer",
-		"image": "",
+		"image": "https://avatars.githubusercontent.com/u/79867073?v=4",
 		"email": "john@gmail.com",
 		"phone": "(912) 555-4321",
 		"url": "https://johndoe.com",
@@ -16,9 +16,19 @@
 		},
 		"profiles": [
 			{
-				"network": "Twitter",
-				"username": "john",
-				"url": "https://twitter.com/john"
+				"network": "X",
+				"username": "Sebastián Sanhueza Tapia",
+				"url": "https://x.com/SebaSanhueTapia"
+			},
+			{
+				"network": "GitHub",
+				"username": "Sebastián Sanhueza Tapia",
+				"url": "https://github.com/SuKuShaing"
+			},
+			{
+				"network": "LinkedIn",
+				"username": "Sebastián Sanhueza Tapia",
+				"url": "https://www.linkedin.com/in/sebastiansanhuezatapia/"
 			}
 		]
 	},
