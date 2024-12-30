@@ -8,8 +8,11 @@ import LinkedIn from '@/icons/LinkedIn.astro'
 import GitHub from '@/icons/GitHub.astro'
 import WorldMap from '@/icons/WorldMap.astro'
 
+
 const { name, label, image, profiles, phone, email, location } = basics
 const { city, region } = location
+
+console.log(city, region)
 
 const SOCIAL_ICONS: Record<string, any> = {
     LinkedIn,
@@ -86,8 +89,18 @@ const SOCIAL_ICONS: Record<string, any> = {
         gap: 1rem;
     }
 
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+
     h1 {
         font-size: 2rem;
+    }
+    
+    h2 {
         color: #444;
         font-weight: 500;
         font-size: 1.1rem;
@@ -99,5 +112,37 @@ const SOCIAL_ICONS: Record<string, any> = {
         object-fit: cover;
         width: 128px;
         border-radius: 16px;
+    }
+
+    span {
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.85rem; 
+        letter-spacing: -0.05rem;
+    }
+
+    footer {
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    footer a {
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all .3s ease;
+    }
+
+    footer a:hover {
+        background: #eee;
+        border: 1px solid #ddd;
     }
 </style>
