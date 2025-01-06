@@ -213,12 +213,31 @@
 	],
 	"projects": [
 		{
-			"name": "Project",
+			"name": "Tienda online de TastyFree",
+			"isActive": true,
 			"startDate": "2019-01-01",
 			"endDate": "2021-01-01",
-			"description": "Description...",
-			"highlights": ["Won award at AIHacks 2016"],
-			"url": "https://project.com/"
+			"description": "creación online de TastyFree en shopify y mantención de la misma",
+			"highlights": ["Shopify", "Cloudflare", "Google Analytics"],
+			"url": "https://tastyfree.cl/"
+		},
+		{
+			"name": "Plataforma de BigIA",
+			"isActive": true,
+			"startDate": "2017-01-01",
+			"endDate": "2019-01-01",
+			"description": "Desarrollo de una plataforma de BigIA con tecnologías modernas y escalables",
+			"highlights": ["Next.js", "MongoDB", "AWS"],
+			"url": "https://bigia.com/"
+		},
+		{
+			"name": "Print3x",
+			"isActive": true,
+			"startDate": "2015-01-01",
+			"endDate": "2017-01-01",
+			"description": "Desarrollo de aplicaciones web, implementando nuevas funcionalidades y optimizando el rendimiento del sitio.",
+			"highlights": ["Shopify", "javascript", "html", "css", "liquid"],
+			"url": "https://print3x.com/"
 		}
 	]
 }
