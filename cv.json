@@ -111,9 +111,86 @@
 	],
 	"skills": [
 		{
-			"name": "Web Development",
+			"name": "HTML",
 			"level": "Master",
-			"keywords": ["HTML", "CSS", "JavaScript"]
+			"keywords": ["Desarrollo web", "Frontend"]
+		},
+		{
+			"name": "CSS",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Frontend"]
+		},
+		{
+			"name": "JavaScript",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Frontend"]
+		},
+		{
+			"name": "Node.js",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "Python",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "Java",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "C++",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "C#",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "SQL",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "MongoDB",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "Git",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "Docker",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "Kubernetes",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "AWS",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "Azure",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
+			"name": "GCP",
+			"level": "Master",
+			"keywords": ["Desarrollo web", "Backend"]
+		},
+		{
 		}
 	],
 	"languages": [
