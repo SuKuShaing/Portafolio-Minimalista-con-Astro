@@ -6,7 +6,7 @@
 		"email": "john@gmail.com",
 		"phone": "(912) 555-4321",
 		"url": "https://johndoe.com",
-		"summary": "A summary of John Doe…",
+		"summary": "A summary of John Doe in 1-2 sentences that appears at the top of the CV and gives a high-level overview of the candidate and their experience and skills in a way that entices the reader to read on and learn more about the candidate and their experience and skills.",
 		"location": {
 			"address": "2712 Broadway St",
 			"postalCode": "CA 94115",
@@ -34,13 +34,31 @@
 	},
 	"work": [
 		{
-			"name": "Company",
-			"position": "President",
+			"name": "TastyFree",
+			"position": "Don TI",
 			"url": "https://company.com",
 			"startDate": "2013-01-01",
 			"endDate": "2014-01-01",
-			"summary": "Description…",
+			"summary": "Lideré el equipo de TI, desarrollando soluciones innovadoras y mejorando la infraestructura tecnológica para optimizar los procesos internos y aumentar la eficiencia operativa.",
 			"highlights": ["Started the company"]
+		},
+		{
+			"name": "BigIA",
+			"position": "Developer",
+			"url": "https://company.com",
+			"startDate": "2011-01-01",
+			"endDate": "2013-01-01",
+			"summary": "Desarrollé una plataforma avanzada utilizando tecnologías modernas, mejorando la experiencia del usuario y aumentando la escalabilidad del sistema.",
+			"highlights": ["Developed a cool platform"]
+		},
+		{
+			"name": "Print3x",
+			"position": "Developer",
+			"url": "https://company.com",
+			"startDate": "2010-01-01",
+			"endDate": "2011-01-01",
+			"summary": "Trabajé en el desarrollo de aplicaciones web, implementando nuevas funcionalidades y optimizando el rendimiento del sitio.",
+			"highlights": ["Developed a cool platform"]
 		}
 	],
 	"volunteer": [
