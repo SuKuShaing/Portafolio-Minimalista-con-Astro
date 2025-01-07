@@ -12,15 +12,18 @@ import { projects } from "@cv";
 					<li>
 						<article>
 							<header>
-								<a href={url} title={`Ver el proyecto ${name}`}>
-									<h3>{name}</h3>
-								</a>
+								<h3>
+									<a href={url} title={`Ver el proyecto ${name}`}>
+										{name}
+									</a>
+									{isActive && <span>&bull;</span>}
+								</h3>
 								<p>{description}</p>
 							</header>
 							<footer>
-									{highlights.map((highlight) => {
-										return <span>{highlight}</span>;
-									})}
+								{highlights.map((highlight) => {
+									return <span>{highlight}</span>;
+								})}
 							</footer>
 						</article>
 					</li>
@@ -31,24 +34,21 @@ import { projects } from "@cv";
 </Section>
 
 <style>
-    ul {
-        display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(200px, 1fr)
-        );
-        gap: 1rem;
-    }
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1rem;
+	}
 
-    article {
-        border-radius: 8px;
-        border: 1px solid #f2f2f2;
+	article {
+		border-radius: 8px;
+		border: 1px solid #f2f2f2;
 		gap: 16px;
-        display: flex;
-        flex-direction: column;
-        padding: 16px;
-        height: 100%;
-    }
+		display: flex;
+		flex-direction: column;
+		padding: 16px;
+		height: 100%;
+	}
 
 	article header {
 		flex: 1;
@@ -66,6 +66,10 @@ import { projects } from "@cv";
 		text-decoration: underline;
 	}
 
+	article h3 span {
+		color: rgb(0, 188, 47);
+	}
+
 	article p {
 		font-size: 0.75rem;
 		line-height: 1.2rem;
@@ -81,10 +85,10 @@ import { projects } from "@cv";
 
 	footer span {
 		border-radius: 6px;
-        background: #eee;
-        color: #444;
-        font-size: 0.6rem;
-        font-weight: 500;
-        padding: 0.2rem 0.6rem;
+		background: #eee;
+		color: #444;
+		font-size: 0.6rem;
+		font-weight: 500;
+		padding: 0.2rem 0.6rem;
 	}
 </style>
