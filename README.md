@@ -13,8 +13,20 @@ Siguiendo el tutorial de Midudev en [Youtube](https://youtu.be/Zwh92LTB-Bk?si=Yy
   }
 ```
 
-Schema del JSON de CV, standar en:
+## Schema del JSON de CV, standar en:
 https://jsonresume.org/schema
+
+
+## Menú desplegable
+usamos uno de los menú listados aquí:
+https://github.com/stefanjudis/awesome-command-palette
+
+
+### Menú desplegable Ninja-keys
+El menú desplegable que usamos es Ninja-keys, se puede ver en:
+https://github.com/ssleptsov/ninja-keys
+
+
 
 
 

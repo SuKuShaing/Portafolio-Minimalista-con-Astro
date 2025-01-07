@@ -1,11 +1,35 @@
-<footer>
+<footer></footer>
 
-</footer>
+<ninja-keys
+    placeholder="Buscar comando"
+    hideBreadcrumbs="true"
+></ninja-keys>
 
 <script>
+	import "ninja-keys";
 
+	const ninja = document.querySelector("ninja-keys");
+
+	if (ninja != null) {
+		ninja.data = [
+			{
+				id: "print",
+				title: "🖨 Imprimir",
+				hotkey: "ctrl+P",
+				// icon: "print",
+				section: "Acciones",
+				handler: () => {
+					window.print();
+				},
+			}
+		];
+	}
 </script>
 
 <style>
-
+    @media print {
+        ninja-keys {
+            display: none;
+        }
+    }
 </style>
