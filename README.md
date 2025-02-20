@@ -68,13 +68,20 @@ npm cache clean --force
 rd /s /q "node_modules"
 del package-lock.json
 del -f yarn.lock
+```sh
 ```
 
 3. update your npm version
+```sh
 npm install -g npm@latest --force
+```
 
 4. clean npm cache
+```sh
 npm cache clean --force
+```
 
 5. install packages
+```sh
 npm install
+```
