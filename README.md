@@ -57,19 +57,19 @@ EPERM: operation not permitted, rmdir 'D:\Progra\Platzi\Cursos Webs\Astro-Desarr
 
 ejecutando los 5 pasos de aquí, se soluciona (ojo comandos para consola windows, no funcionan en bash porque emula comandos Linux)
 
-1) clean npm cache
+1. clean npm cache
 npm cache clean --force
 
-2) (Windows) delete node_modules and package-lock.json
+2. (Windows) delete node_modules and package-lock.json
 rd /s /q "node_modules"
 del package-lock.json
 del -f yarn.lock
 
-3) update your npm version
+3. update your npm version
 npm install -g npm@latest --force
 
-4) clean npm cache
+4. clean npm cache
 npm cache clean --force
 
-5) install packages
+5. install packages
 npm install
